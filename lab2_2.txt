@@ -1,0 +1,63 @@
+    1  history>lab_bash.txt
+    2  pwd
+    3  ls
+    4  nano lab_bash.txt
+    5  docker
+    6  nodejs --version
+    7  su
+    8  sudo passwd root
+    9  su
+   10  cat file
+   11  su
+   12  cat file
+   13  ls -lR>lab2_1.txt
+   14  sudo ls -lR>lab2_1.txt
+   15  history>lab2_2.txt
+   16  cd                      zdes' nachalo labi #2
+   17  mkdir test
+   18  cd test
+   19  touch file
+   20  ls -l
+   21  chmod a-rwx file
+   22  nano file
+   23  echo "ne poluchilos'"
+   24  chmod u+w file
+   25  ls -l
+   26  nano file
+   27  echo "test">file
+   28  cat file
+   29  chmod g+r file
+   30  ls -l
+   31  ll 
+   32  cat file
+   33  chmod u+r file
+   34  ls -l
+   35  cat file
+   36  mkdir dir
+   37  cd dir
+   38  touch new_file
+   39  echo "file 2">new_file
+   40  ls
+   41  chmod a-x dir
+   42  cd ..
+   43  chmod a-x dir
+   44  cat dir/new_file
+   45  rm dir/new_file
+   46  chown file root
+   47  chown root file
+   48  chown root:root file
+   49  man umask
+   50  umask
+   51  umask 077
+   52  umask
+   53  touch file1
+   54  ls -l file1
+   55  umask u=rwx,g=rwx,o=rwx
+   56  touch file2
+   57  ls -l file2
+   58  ls -lR>laba2_1.txt
+   59  sudo ls -lR>lab2_1.txt
+   60  cd ..
+   61  ls
+   62  cd test
+   63  history>lab2_2.txt
