@@ -1,0 +1,13 @@
+.:
+total 16
+drw-rw-r-- 2 regina regina 4096 сен 12 10:49 dir
+-r--r----- 1 root   regina    5 сен 12 10:45 file
+-rw------- 1 regina regina    0 сен 12 11:26 file1
+-rw-rw-rw- 1 regina regina    0 сен 12 11:33 file2
+-rw-rw-r-- 1 regina regina    0 сен 12 11:48 lab2_1.txt
+-rw-rw-r-- 1 regina regina  279 сен 12 11:46 lab2_2.txt
+-rw-rw-rw- 1 regina regina  460 сен 12 11:48 laba2_1.txt
+
+./dir:
+total 4
+-rw-rw-r-- 1 regina regina 7 сен 12 10:50 new_file
