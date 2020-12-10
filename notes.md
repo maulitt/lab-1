@@ -28,19 +28,26 @@
 
 exec заменяет shell указанной командой.
 
-`[student@localhost ~]$ sh
+`[student@localhost ~]$ sh`
 
-sh-5.0$ ps -l`
+`sh-5.0$ ps -l`
+
 `F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD`
+
 `0 S  1000   11101   10958  0  80   0 - 56670 -      pts/0    00:00:00 bash`
+
 `0 S  1000   11330   11101  0  80   0 - 56313 -      pts/0    00:00:00 sh `
+
 `0 R  1000   11332   11330  0  80   0 - 54699 -      pts/0    00:00:00 ps`
 
 видим, что у дочернего интерпретатора sh пид 11330.  Выполним экзек
 
 `sh-5.0$ exec ps -l`
+
 `F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD`
+
 `0 S  1000   11101   10958  0  80   0 - 56670 -      pts/0    00:00:00 bash`
+
 `0 R  1000   11330   11101  0  80   0 - 54699 -      pts/0    00:00:00 ps`
 
 exec'ом мы заменили итерпретатор командой ps и теперь у неё пид sh - 11330
