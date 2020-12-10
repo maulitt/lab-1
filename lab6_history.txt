@@ -1,0 +1,26 @@
+﻿  162  ls -l /dev/sda{,[123]}
+  163  lsblk --list
+  164  cat /proc/diskstats
+  165  cat /proc/devices
+  169  dd if=/dev/zero of=./fs.img bs=1M count=10
+  170  losetup --find --show ./fs.img
+  171  sudo losetup --find --show ./fs.img
+  172  losetup --list
+  173  mkfs -t ext4 /dev/loop0
+  174  sudo mkfs -t ext4 /dev/loop0
+  175  echo У меня отличется немного вывод предыдущей команды
+  176  echo и там уже есть UUID
+  177  sudo blkid /dev/loop0
+  178  sudo mount /dev/loop0 /mnt
+  179  mount | grep /mnt
+  180  df -h /mnt
+  181  df -hi /mnt
+  182  sudo umount /dev/loop0
+  183  tune2fs -l /dev/loop0
+  184  sudo tune2fs -l /dev/loop0
+  185  sudo losetup --detach /dev/loop0
+  186  sudo losetup --list
+  187  ls
+  188  rm fs.img
+  189  >lab6_history.txt
+  190  history > lab6_history.txt
